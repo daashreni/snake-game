@@ -15,7 +15,9 @@ body{
 #board{
         width: 90vmin;
         height: 92vmin;
-        background-color:#c5dc44;
+        background-image:url(3.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
         border: 5px solid #000000;
         box-shadow:1px 1px 50px #d9ff00;
         display: grid;
@@ -23,8 +25,8 @@ body{
         grid-template-rows:repeat(18,1fr) ;
 }
 .head{
-    background-color: green;
+    background-color: #2fa203;
 }
 .food{
-    background-color: red;
+    background-color: #ff0549;
 }
