@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(snake1.jpg);
+    min-height: 100vh;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+#board{
+        width: 90vmin;
+        height: 92vmin;
+        background-color:#c5dc44;
+        border: 5px solid #000000;
+        box-shadow:1px 1px 50px #d9ff00;
+        display: grid;
+        grid-template-columns: repeat(18,1fr);
+        grid-template-rows:repeat(18,1fr) ;
+}
+.head{
+    background-color: green;
+}
+.food{
+    background-color: red;
+}
