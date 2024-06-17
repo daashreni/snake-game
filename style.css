@@ -20,13 +20,7 @@ body{
         background-size: cover;
         border: 5px solid #000000;
         box-shadow:1px 1px 50px #d9ff00;
-        display: grid;
+        /* display: grid;
         grid-template-columns: repeat(18,1fr);
-        grid-template-rows:repeat(18,1fr) ;
-}
-.head{
-    background-color: #2fa203;
-}
-.food{
-    background-color: #ff0549;
+        grid-template-rows:repeat(18,1fr) ; */
 }
