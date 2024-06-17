@@ -18,6 +18,16 @@ let foodY;
 
 let gameOver = false;
 
+function resetGame() {
+    snakeX = blockSize * 5;
+    snakeY = blockSize * 5;
+    speedX = 0;
+    speedY = 0;
+    snakeBody = [];
+    gameOver = false;
+    placeFood();
+}
+
 window.onload = function () {
     board = document.getElementById('board');
     board.height = total_row * blockSize;
@@ -67,14 +77,17 @@ function update() {
         || snakeY > total_row * blockSize){
         
         gameOver = true;
-        alert("it's over");
-    
+        alert("it's over. If you want to start over you can press ok!");
+        resetGame();
+        return;
     }
 
     for ( let i = 0; i < snakeBody.length; i++) {
         if (snakeX == snakeBody[i][0] && snakeY == snakeBody[i][1]){
             gameOver = true;
-            alert("get over with yourself");
+            alert("get over with yourself, press ok to be free");
+            resetGame();
+            return;
         }
     }
 }
