@@ -12,6 +12,16 @@ body{
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
 }
+.score{
+    margin: 10px;
+    padding: 10px;
+    text-align: right;
+    justify-content: baseline;
+}
+span{
+    color: aliceblue;
+   
+}
 #board{
         width: 90vmin;
         height: 92vmin;
